@@ -143,7 +143,7 @@ function ItemsToItemInfo()
 	}
 
 	local items = {}
-	for k, item in pairs(Config.CraftingItems) do
+	for k, item in pairs(Config.CraftingItems['items']) do
 		local itemInfo = QBCore.Shared.Items[item.name:lower()]
 		items[item.slot] = {
 			name = itemInfo["name"],
